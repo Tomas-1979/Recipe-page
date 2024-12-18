@@ -108,6 +108,7 @@ main {
 @media screen and (min-width: 720px) {
     .header-img {
         border-radius: 1rem;
+        margin-bottom: 2rem;
     }
 }
 
