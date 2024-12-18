@@ -1,6 +1,8 @@
 :root {
     --color-white: rgb(255, 255, 255);
     --color-black: rgb(0, 0, 0);
+    --color-stone-100: rgb(243, 230, 216);
+    --color-stone-150: rgb(228, 222, 216);
     --color-stone-600: rgb(103, 99, 95);
     --color-brown-800: rgb(95, 73, 54);
     --color-rose-800: rgb(67, 43, 57);
@@ -62,28 +64,46 @@ td {
 }
 
 body {
-    background: var(--color-white);
+    background: var(--color-stone-150);
 }
 
 main {
     max-width: 720px;
     margin: 0 auto;
-    padding: 1.4rem;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        padding: 0;
+    }
+}
+
+/* CONTAINER */
+
+.container {
+    background-color: var(--color-white);
+}
+
+@media screen and (min-width: 720px) {
+    .container {
+        max-width: 720px;
+        margin: 2rem auto;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
 }
 
 /* HEADER */
 
 .header-img {
     max-width: 100%;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 720px) {
-
     .header-img {
-        max-width: calc(720px - 2rem);
         border-radius: 1rem;
-        margin-top: 2rem;
     }
 }
 
@@ -100,7 +120,7 @@ main {
 /* PREP TIME */
 
 .prep-time {
-    background-color: var(--color-rose-50);
+    background-color: var(--color-stone-100);
     border-radius: 1rem;
     width: 100%;
     padding: 1rem;
